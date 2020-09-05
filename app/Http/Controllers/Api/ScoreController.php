@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Person;
+use App\Http\Controllers\Controller;
+use App\Score;
 use Illuminate\Http\Request;
 
-class PersonController extends Controller
+class ScoreController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class PersonController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Person  $person
+     * @param  \App\Score  $score
      * @return \Illuminate\Http\Response
      */
-    public function show(Person $person)
+    public function show(Score $score)
     {
         //
     }
@@ -52,10 +53,10 @@ class PersonController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Person  $person
+     * @param  \App\Score  $score
      * @return \Illuminate\Http\Response
      */
-    public function edit(Person $person)
+    public function edit(Score $score)
     {
         //
     }
@@ -64,10 +65,10 @@ class PersonController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Person  $person
+     * @param  \App\Score  $score
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Person $person)
+    public function update(Request $request, Score $score)
     {
         //
     }
@@ -75,10 +76,10 @@ class PersonController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Person  $person
+     * @param  \App\Score  $score
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Person $person)
+    public function destroy(Score $score)
     {
         //
     }

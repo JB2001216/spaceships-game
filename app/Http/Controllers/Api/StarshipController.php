@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Score;
+use App\Http\Controllers\Controller;
+use App\Starship;
 use Illuminate\Http\Request;
 
-class ScoreController extends Controller
+class StarshipController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class ScoreController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Score  $score
+     * @param  \App\Starship  $starship
      * @return \Illuminate\Http\Response
      */
-    public function show(Score $score)
+    public function show(Starship $starship)
     {
         //
     }
@@ -52,10 +53,10 @@ class ScoreController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Score  $score
+     * @param  \App\Starship  $starship
      * @return \Illuminate\Http\Response
      */
-    public function edit(Score $score)
+    public function edit(Starship $starship)
     {
         //
     }
@@ -64,10 +65,10 @@ class ScoreController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Score  $score
+     * @param  \App\Starship  $starship
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Score $score)
+    public function update(Request $request, Starship $starship)
     {
         //
     }
@@ -75,10 +76,10 @@ class ScoreController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Score  $score
+     * @param  \App\Starship  $starship
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Score $score)
+    public function destroy(Starship $starship)
     {
         //
     }

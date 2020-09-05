@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Starship;
+use App\Http\Controllers\Controller;
+use App\Person;
 use Illuminate\Http\Request;
 
-class StarshipController extends Controller
+class PersonController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class StarshipController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Starship  $starship
+     * @param  \App\Person  $person
      * @return \Illuminate\Http\Response
      */
-    public function show(Starship $starship)
+    public function show(Person $person)
     {
         //
     }
@@ -52,10 +53,10 @@ class StarshipController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Starship  $starship
+     * @param  \App\Person  $person
      * @return \Illuminate\Http\Response
      */
-    public function edit(Starship $starship)
+    public function edit(Person $person)
     {
         //
     }
@@ -64,10 +65,10 @@ class StarshipController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Starship  $starship
+     * @param  \App\Person  $person
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Starship $starship)
+    public function update(Request $request, Person $person)
     {
         //
     }
@@ -75,10 +76,10 @@ class StarshipController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Starship  $starship
+     * @param  \App\Person  $person
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Starship $starship)
+    public function destroy(Person $person)
     {
         //
     }

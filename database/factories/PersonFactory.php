@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Person::class, function (Faker $faker) {
     return [
-        //
+        'name' => $faker->name,
+        'mass' => $faker->randomFloat(2, 40, 150)
     ];
 });

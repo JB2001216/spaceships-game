@@ -15,6 +15,8 @@ class CreateStarshipsTable extends Migration
     {
         Schema::create('starships', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->unsignedBigInteger('crew');
             $table->timestamps();
         });
     }
