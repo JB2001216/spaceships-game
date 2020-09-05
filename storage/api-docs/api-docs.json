@@ -6,6 +6,76 @@
         "version": "1.0.0"
     },
     "paths": {
+        "/api/play/starships": {
+            "post": {
+                "tags": [
+                    "play"
+                ],
+                "summary": "New game between startships",
+                "description": "Fetches two random starships and outputs the winner",
+                "operationId": "play-starships",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/play/people": {
+            "post": {
+                "tags": [
+                    "play"
+                ],
+                "summary": "New game between people",
+                "description": "Fetches two random people and outputs the winner",
+                "operationId": "play-people",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/api/people": {
             "get": {
                 "tags": [

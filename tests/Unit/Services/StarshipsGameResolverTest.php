@@ -6,7 +6,7 @@ use App\Starship;
 use App\Repositories\StarshipRepository;
 use App\Repositories\ScoreRepository;
 use App\Score;
-use App\Services\RandomStarshipsGameResolver;
+use App\Services\RandomGame\RandomStarshipsGameResolver;
 use LogicException;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
@@ -21,7 +21,7 @@ class StarshipsGameResolverTest extends TestCase
      * @var StarshipRepository|MockInterface
      */
     private $starshipRepository;
-    /** @var RandomStarshipsGameResolver */
+    /** @var \App\Services\RandomGame\RandomStarshipsGameResolver */
     private $service;
 
     protected function setUp(): void
@@ -29,7 +29,7 @@ class StarshipsGameResolverTest extends TestCase
         parent::setUp();
         $this->starshipRepository = $this->createMock(StarshipRepository::class);
         $this->scoreRepository = $this->createMock(ScoreRepository::class);
-        $this->service = new RandomStarshipsGameResolver($this->starshipRepository, $this->scoreRepository);
+        $this->service = new \App\Services\RandomGame\RandomStarshipsGameResolver($this->starshipRepository, $this->scoreRepository);
     }
 
     /**

@@ -6,7 +6,7 @@ use App\Person;
 use App\Repositories\PersonRepository;
 use App\Repositories\ScoreRepository;
 use App\Score;
-use App\Services\RandomPeopleGameResolver;
+use App\Services\RandomGame\RandomPeopleGameResolver;
 use LogicException;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
@@ -29,7 +29,7 @@ class PeopleGameResolverTest extends TestCase
         parent::setUp();
         $this->personRepository = $this->createMock(PersonRepository::class);
         $this->scoreRepository = $this->createMock(ScoreRepository::class);
-        $this->service = new RandomPeopleGameResolver($this->personRepository, $this->scoreRepository);
+        $this->service = new \App\Services\RandomGame\RandomPeopleGameResolver($this->personRepository, $this->scoreRepository);
     }
 
     /**

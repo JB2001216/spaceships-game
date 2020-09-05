@@ -13,8 +13,12 @@
 
 `npm install`
 
-`npm run prod`
+`npm run prod`/`npm run watch`
 
+## Architecture
+
+- Frontend - React app which fetches the game result.
+- Backend - written in Laravel.
 
 # Task description
 

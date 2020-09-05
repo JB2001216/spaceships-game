@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace App\Services\RandomGame;
 
 use App\Contracts\Game;
 use App\Contracts\Player;
