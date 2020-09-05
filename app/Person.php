@@ -6,6 +6,25 @@ use App\Contracts\Player;
 use App\Traits\HasScore;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @OA\Schema(
+ *     title="Person model",
+ *     description="Person model",
+ *     properties={
+ *    @OA\Property(
+ *        property="name",
+ *        description="name",
+ *        title="Name"
+ *    ),
+ *    @OA\Property(
+ *        property="mass",
+ *        description="mass",
+ *        title="Mass"
+ *    )
+ *   }
+ * ),
+ *
+ */
 class Person extends Model implements Player
 {
     use HasScore;

@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Services\RandomPeopleGameResolver;
 use App\Services\RandomStarshipsGameResolver;
 use App\Transformers\GameResultTransformer;
 use Spatie\Fractalistic\ArraySerializer;
 
-class GameController extends Controller
+class GameController extends ApiController
 {
     /**
      * @var GameResultTransformer

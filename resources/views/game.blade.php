@@ -21,6 +21,12 @@
              data-initial-game-type='{{ $gameType }}'
              data-play-person-api-endpoint='{{ $playPersonApiEndpoint }}'
              data-play-starship-api-endpoint='{{$playStarshipApiEndpoint}}'></div>
+
+        <div class="row my-5">
+            <div class="col-md-12 text-right">
+                <a class="btn btn-primary" href="{{ route('l5-swagger.default.api') }}">Swagger</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>

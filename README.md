@@ -1,4 +1,23 @@
 # Fullstack Test
+
+## Installation
+1. Copy `.env.example` to `.env` and provide credentials
+2. Copy `.env.example` to `.env.testing` and provide credentials
+3. Run:
+
+`composer install`
+
+`php artisan key:generate`
+
+`php artisan migrate --seed`
+
+`npm install`
+
+`npm run prod`
+
+
+# Task description
+
 We want you to have fun doing this test so we've chosen a subject matter that is a little unusual, but should be more fun that other tests you may have done.
 ###Frontend
 Build an application to select random people or starships and render their details to see
